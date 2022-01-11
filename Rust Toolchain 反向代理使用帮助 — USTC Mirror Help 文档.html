@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://mirrors.ustc.edu.cn/help/rust-static.html -->
+<html class="writer-html5" lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rust Toolchain 反向代理使用帮助 — USTC Mirror Help  文档</title>
+      <link rel="stylesheet" href="./Rust Toolchain 反向代理使用帮助 — USTC Mirror Help 文档_files/pygments.css" type="text/css">
+      <link rel="stylesheet" href="./Rust Toolchain 反向代理使用帮助 — USTC Mirror Help 文档_files/theme.css" type="text/css">
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="./Rust Toolchain 反向代理使用帮助 — USTC Mirror Help 文档_files/documentation_options.js.下载"></script>
+        <script src="./Rust Toolchain 反向代理使用帮助 — USTC Mirror Help 文档_files/jquery.js.下载"></script>
+        <script src="./Rust Toolchain 反向代理使用帮助 — USTC Mirror Help 文档_files/underscore.js.下载"></script>
+        <script src="./Rust Toolchain 反向代理使用帮助 — USTC Mirror Help 文档_files/doctools.js.下载"></script>
+        <script src="./Rust Toolchain 反向代理使用帮助 — USTC Mirror Help 文档_files/translations.js.下载"></script>
+    <script src="./Rust Toolchain 反向代理使用帮助 — USTC Mirror Help 文档_files/theme.js.下载"></script>
+    <link rel="index" title="索引" href="https://mirrors.ustc.edu.cn/help/genindex.html">
+    <link rel="search" title="搜索" href="https://mirrors.ustc.edu.cn/help/search.html">
+    <link rel="next" title="Stackage 源使用帮助" href="https://mirrors.ustc.edu.cn/help/stackage.html">
+    <link rel="prev" title="Rust Crates 源使用帮助" href="https://mirrors.ustc.edu.cn/help/crates.io-index.html"> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+            <a href="https://mirrors.ustc.edu.cn/help/index.html" class="icon icon-home"> USTC Mirror Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="https://mirrors.ustc.edu.cn/help/search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/alpine.html">Alpine Linux 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/anthon.html">AOSC OS 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/aosp.html">AOSP 镜像使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/archlinux.html">Arch Linux 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/archlinuxcn.html">Arch Linux CN 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/archlinuxarm.html">Arch Linux ARM 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/blackarch.html">Black Arch 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/centos.html">CentOS 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/epel.html">EPEL 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/chakra.html">Chakra 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/debian.html">Debian 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/debian-security.html">Debian Security 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/debian-cd.html">Debian CD 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/debian-cdimage.html">Debian-cdimage 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/debiancn.html">Debiancn 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/deb-multimedia.html">Deb Multimedia 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/fedora.html">Fedora 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/freebsd.html">FreeBSD 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/freebsd-pkg.html">FreeBSD pkg 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/freebsd-ports.html">FreeBSD ports 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/rpmfusion.html">RPM Fusion 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/gentoo.html">Gentoo 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/gentoo-portage.html">Gentoo Portage 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/kali.html">Kali Linux 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/linuxmint.html">Linux Mint 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/mageia.html">Mageia 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/manjaro.html">Manjaro Linux 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/msys2.html">MSYS2 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/opensuse.html">openSUSE 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/openwrt.html">OpenWRT/LEDE 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/packman.html">PackMan 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/proxmox.html">Proxmox 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/raspberry-pi-os-images.html">Raspberry Pi OS Images 使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/raspbian.html">Raspbian 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/raspbian-addons.html">Raspbian Addons 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/rocky.html">Rocky Linux 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/scientificlinux.html">Scientific Linux 镜像使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/termux.html">Termux 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/trisquel.html">Trisquel 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/ubuntu.html">Ubuntu 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/ubuntu-ports.html">Ubuntu Ports 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/ubuntu-old-releases.html">Ubuntu Old Releases 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/ubuntu-releases.html">Ubuntu Releases 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/ubuntu-cdimage.html">Ubuntu CD Image 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/ubuntu-cloud-images.html">Ubuntu Cloud Images 源使用帮助</a></li>
+</ul>
+<ul class="current" aria-expanded="true">
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/clojars.html">Clojars 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/ghcup.html">GHCup 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/hackage.html">Hackage 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/julia.html">Julia 镜像使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/node.html">Node 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/nodesource.html">Nodesource 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/pypi.html">PyPI 镜像源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/rubygems.html">Rubygems 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/crates.io-index.html">Rust Crates 源使用帮助</a></li>
+<li class="toctree-l1 current" aria-expanded="true"><a class="reference internal current" href="https://mirrors.ustc.edu.cn/help/rust-static.html#" aria-expanded="true"><button class="toctree-expand" title="Open/close menu"></button>Rust Toolchain 反向代理使用帮助</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/rust-static.html#id1">说明</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/rust-static.html#id2">使用说明</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/stackage.html">Stackage 源使用帮助</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/anaconda.html">Anaconda 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/brew.git.html">Homebrew 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/CPAN.html">CPAN 镜像使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/CRAN.html">CRAN 镜像使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/docker-ce.html">Docker CE 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/dockerhub.html">Docker Hub 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/eclipse.html">Eclipse 镜像使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/elpa.html">Emacs ELPA 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/github-release.html">GitHub Release 镜像使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/homebrew-bottles.html">Homebrew Bottles 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/homebrew-core.git.html">Homebrew Core 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/homebrew-cask.git.html">Homebrew Cask 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/homebrew-cask-versions.git.html">Homebrew Cask Versions 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/qtproject.html">Qt 镜像使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/linux.git.html">Linux 内核源码镜像使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/linuxbrew-bottles.html">Linuxbrew Bottles 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/linuxbrew-core.git.html">Linuxbrew Core 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/mariadb.html">MariaDB 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/nix-channels.html">Nix Channels 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/raspberrypi.html">Raspberrypi 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/ros.html">ROS 源使用帮助</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/xbmc.html">XBMC/Kodi 镜像使用帮助</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/rsync-guide.html">科大源同步方法与注意事项</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/todo.html">TODO List</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://mirrors.ustc.edu.cn/help/contributor.html">文档贡献者名单</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="https://mirrors.ustc.edu.cn/help/index.html">USTC Mirror Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="https://mirrors.ustc.edu.cn/help/index.html" class="icon icon-home"></a> »</li>
+      <li>Rust Toolchain 反向代理使用帮助</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ustclug/mirrorhelp/blob/master/source/rust-static.rst" class="fa fa-github"> 在 GitHub 上修改</a>
+      </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="rust-toolchain">
+<h1>Rust Toolchain 反向代理使用帮助<a class="headerlink" href="https://mirrors.ustc.edu.cn/help/rust-static.html#rust-toolchain" title="永久链接至标题"></a></h1>
+<section id="id1">
+<h2>说明<a class="headerlink" href="https://mirrors.ustc.edu.cn/help/rust-static.html#id1" title="永久链接至标题"></a></h2>
+<p>Rust Toolchain 反向代理</p>
+</section>
+<section id="id2">
+<h2>使用说明<a class="headerlink" href="https://mirrors.ustc.edu.cn/help/rust-static.html#id2" title="永久链接至标题"></a></h2>
+<p>请配合 <a class="reference external" href="http://www.rustup.rs/">rustup</a> 来使用。</p>
+<p>rustup 安装方法可参考官方的 <a class="reference external" href="https://github.com/rust-lang-nursery/rustup.rs#other-installation-methods">文档</a></p>
+<p>使用 rustup 前，先设置环境变量 <code class="docutils literal notranslate"><span class="pre">RUSTUP_DIST_SERVER</span></code> （用于更新 toolchain）：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">RUSTUP_DIST_SERVER</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">ustc</span><span class="o">.</span><span class="n">edu</span><span class="o">.</span><span class="n">cn</span><span class="o">/</span><span class="n">rust</span><span class="o">-</span><span class="n">static</span>
+</pre></div>
+</div>
+<p>以及 <code class="docutils literal notranslate"><span class="pre">RUSTUP_UPDATE_ROOT</span></code> （用于更新 rustup）：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">RUSTUP_UPDATE_ROOT</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">ustc</span><span class="o">.</span><span class="n">edu</span><span class="o">.</span><span class="n">cn</span><span class="o">/</span><span class="n">rust</span><span class="o">-</span><span class="n">static</span><span class="o">/</span><span class="n">rustup</span>
+</pre></div>
+</div>
+<p>Windows 下对应的设置环境变量的 PowerShell 命令为：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$env:RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
+$env:RUSTUP_UPDATE_ROOT="https://mirrors.ustc.edu.cn/rust-static/rustup"
+</pre></div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>截止到该页面编写的时候（2017-01-05）， cargo 的软件包依然托管在 AWS 上， 因此无法对下载地址做替换，
+下载速度可能较慢。但该软件包只有大概 10 MB 左右，影响不会很大。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>第一次安装 rustup 的时候，如果按照官网教程 <a class="reference external" href="https://sh.rustup.rs/">https://sh.rustup.rs</a> 链接无法下载，可以通过
+<a class="reference external" href="https://cdn.jsdelivr.net/gh/rust-lang-nursery/rustup.rs/rustup-init.sh">jsDelivr CDN</a> 下载 <code class="docutils literal notranslate"><span class="pre">rustup-init.sh</span></code>，
+然后把脚本中的 <code class="docutils literal notranslate"><span class="pre">RUSTUP_UPDATE_ROOT</span></code> 变量改为 <code class="docutils literal notranslate"><span class="pre">https://mirrors.ustc.edu.cn/rust-static/rustup</span></code>。</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="https://mirrors.ustc.edu.cn/help/crates.io-index.html" class="btn btn-neutral float-left" title="Rust Crates 源使用帮助" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="https://mirrors.ustc.edu.cn/help/stackage.html" class="btn btn-neutral float-right" title="Stackage 源使用帮助" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>© 版权所有 2017 - 2022, LUG@USTC.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org/">Read the Docs</a>开发.
+  
+<p>除额外注明的地方外，本文档按 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议发布。</p>
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+
+</body></html>
